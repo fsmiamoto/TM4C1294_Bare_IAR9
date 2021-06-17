@@ -1,0 +1,5 @@
+# ninja log v5
+219	418	6456568286155737	C:/Users/hviei/Documents/GitHub/TM4C1294_Bare_IAR9/Projects/simple_io_main_sp/Debug/Obj/system_TM4C1294_TW.o	de3dfcb1957b4b8a
+1	470	6456568286654141	C:/Users/hviei/Documents/GitHub/TM4C1294_Bare_IAR9/Projects/simple_io_main_sp/Debug/Obj/startup_TM4C1294.o	ba3c9e536e789e44
+289	528	6456568287332589	C:/Users/hviei/Documents/GitHub/TM4C1294_Bare_IAR9/Projects/simple_io_main_sp/Debug/Obj/simple_io_main_sp.o	7a986b2f136557f5
+536	1552	6456568296857117	C:/Users/hviei/Documents/GitHub/TM4C1294_Bare_IAR9/Projects/simple_io_main_sp/Debug/Exe/simple_io_main_sp.out	5fd41ba15d540e66
