@@ -8,6 +8,9 @@
 #define LED_D4 GPIO_PIN_0
 #define ONE_SEC 12000000
 
+#define waitFor(cycles) for(int i = 0; i < cycles; i++)
+#define writeToLed(value) GPIOPinWrite(GPIO_PORTF_BASE, LED_D4, value)
+
 void setUpGPIO() {
    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);         
    while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOF));
@@ -16,21 +19,12 @@ void setUpGPIO() {
    GPIOPadConfigSet(GPIO_PORTF_BASE, LED_D4, GPIO_STRENGTH_12MA, GPIO_PIN_TYPE_STD);
 }
 
-int writeToLed(uint8_t value) {
-  GPIOPinWrite(GPIO_PORTF_BASE, LED_D4, value);
-  return value;
-}
-
-void wait(int cycles){
-   for(int i = 0; i < cycles; i++);
-}
-
 int main(void) {
    setUpGPIO();
    for (;;) {
       writeToLed(0);
-      wait(ONE_SEC);
+      waitFor(ONE_SEC);
       writeToLed(1);
-      wait(ONE_SEC);
+      waitFor(ONE_SEC);
   }
 }
