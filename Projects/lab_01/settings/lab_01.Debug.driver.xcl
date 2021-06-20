@@ -1,0 +1,17 @@
+"--endian=little" 
+
+"--cpu=Cortex-M4" 
+
+"--fpu=None" 
+
+"--semihosting" 
+
+"--drv_interface_speed=500" 
+
+"--drv_interface=SWD" 
+
+"--lmiftdi_reset_strategy=0,0" 
+
+
+
+

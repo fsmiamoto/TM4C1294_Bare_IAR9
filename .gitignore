@@ -1,0 +1,8 @@
+**/*.o
+**/*.a
+*Debug*
+*crun
+*dbgdt
+*dnx
+*.ninja*
+*.log
