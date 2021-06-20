@@ -6,7 +6,6 @@
 #include "driverlib/systick.h"
 #include "inc/hw_memmap.h"
 
-
 #define LED_D4 GPIO_PIN_0
 #define ONE_SEC 4500000
 
@@ -26,7 +25,6 @@ void setUp(void) {
   GPIOPinWrite(GPIO_PORTF_BASE, LED_D4, 0);
   GPIOPadConfigSet(GPIO_PORTF_BASE, LED_D4, GPIO_STRENGTH_12MA,
                    GPIO_PIN_TYPE_STD);
-  printf("Setup completed\n");
 }
 
 void main(void) {
