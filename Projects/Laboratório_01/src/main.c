@@ -31,9 +31,9 @@ void main(void) {
   setUp();
 
   for (;;) {
-    writeToLed(0);
+    writeToLed(0 << LED_D4);
     waitFor(ONE_SEC);
-    writeToLed(1);
+    writeToLed(1 << LED_D4);
     waitFor(ONE_SEC);
   }
 }
